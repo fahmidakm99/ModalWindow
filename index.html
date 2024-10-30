@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js'></script>
+</head>
+<body>
+    <!-- Buttons to open modal -->
+     <div class="btns">
+        <button class="btn" onclick="openModal()">Show Modal 1</button>
+        <button class="btn" onclick="openModal()">Show Modal 2</button>
+        <button class="btn" onclick="openModal()">Show Modal 3</button>
+     </div>
+  
+    <div class="overlay" onclick="closeModal()"></div>
+    <div class="mymodal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Modal</h2>
+        <p>
+            A modal is a pop-up window or dialog box that appears on top of the main content of a webpage, temporarily disabling interactions with the main page until the modal is closed. Modals are typically used to:
+Display important information, like warnings or notifications.
+Collect user input, like login or registration forms.
+Showcase images, videos, or content without redirecting the user.
+Characteristics of a Modal:
+Overlays: They often appear with a semi-transparent overlay that dims the background, focusing attention on the modal content.
+Layered on Top: Modals stay above the main content, often centered on the screen.
+Temporary Interaction: Users must close the modal to continue interacting with the rest of the page.
+Closable: Modals generally have a close button (like an "X" icon) and can often be closed by clicking outside the modal.
+Modals are useful in keeping users on the same page while delivering important messages or capturing data without disrupting the overall user experience.
+        </p>
+    </div>
+    <!-- Overlay to dim background -->
+    <div class="overlay" onclick="closeModal()"></div>
+</body>
+</html>
